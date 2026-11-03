@@ -1,0 +1,21 @@
+WorshipFlow 5.7.14 — Rapport avant livraison
+
+MODIFICATIONS
+1. Le lecteur affiche uniquement une icône d’horloge et le temps restant, en chiffres agrandis (1,5 rem). La commande pause/reprise reste visible et son libellé accessible se met à jour.
+2. Un bouton retour, directement dans la barre, ferme la lecture et ouvre le culte courant. Il conserve l’état du minuteur : utiliser pause pour suspendre le décompte.
+3. Sept commandes visibles pendant un culte : retour, précédent, liste, suivant, options d’affichage, inspirations et plein écran. Sur les écrans de moins de 350 px, la barre passe sur deux rangées.
+4. Champ « Mot ou phrase dans les paroles » ajouté à Tononkira, avec libellés FR/MG/EN. Il utilise le champ tononkira du formulaire réel du site, indépendamment du titre et de l’auteur. Aucun faux remplacement par une recherche de titre si ce champ devient indisponible.
+5. Import groupé conservé : rechercher, cocher les chants ou Tout sélectionner, Importer la sélection (N), vérifier la prévisualisation, valider. Seuls les textes sont importés.
+6. Recherches concurrentes bloquées pendant la recherche et l’import ; pagination conservée.
+
+CONTROLES EFFECTUES
+- 28 assertions de logique/DOM : minuteur démarrer/pause/reprise, retour au bon culte, commandes, modes, onglets, sélection multiple, prévisualisation de deux chants et traductions.
+- Formulaire réel Tononkira récupéré ; requête réelle de paroles « fitiavana » réussie. Analyse de la réponse et transmission au champ tononkira contrôlées.
+- Chromium réel : lecteur à 320, 390, 768 et 1380 px ; import à 320, 390 et 1380 px. Inspection des captures mobiles. Barre contenue dans l’écran, sept boutons présents, champ paroles visible.
+- Clics réels de démarrage/pause et retour au culte testés dans Chromium ; aucune erreur JavaScript de page détectée.
+- Syntaxe JavaScript, JSON, égalité des copies HTML et intégrité ZIP contrôlés.
+
+LIMITES
+- APK non compilé dans cet environnement ; test Android natif sur appareil non effectué.
+- Le test du site via requête HTTP ne certifie pas les restrictions réseau/CORS de chaque navigateur ou téléphone.
+- Le moteur audio reste celui de la 5.7.12 ; disparition des saccades non confirmée.

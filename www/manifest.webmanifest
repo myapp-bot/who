@@ -1,0 +1,22 @@
+{
+  "name": "WorshipFlow",
+  "short_name": "WorshipFlow",
+  "description": "Préparer et diriger la louange : chants, cultes, inspirations, versets, synchronisation des paroles.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0b1626",
+  "theme_color": "#0b1626",
+  "lang": "mg",
+  "icons": [
+    {"src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
+    {"src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ],
+  "shortcuts": [
+    {"name": "Chants", "url": "./index.html#hira", "icons": [{"src": "icons/icon-96.png", "sizes": "96x96"}]},
+    {"name": "Cultes", "url": "./index.html#culte", "icons": [{"src": "icons/icon-96.png", "sizes": "96x96"}]},
+    {"name": "Statistiques", "url": "./index.html#sta", "icons": [{"src": "icons/icon-96.png", "sizes": "96x96"}]}
+  ]
+}

@@ -1,0 +1,37 @@
+WorshipFlow 5.7.13 — Rapport de modifications
+
+Lecteur
+- Barre de progression : hauteur minimale héritée neutralisée (piste de 6 px, curseur tactile).
+- Espace supérieur réduit ; titre sur plusieurs lignes et auteur discret.
+- Paroles : espace réservé sous le contenu, suppression du voile inférieur.
+- Cinq commandes principales : précédent, liste, suivant, plein écran, menu.
+- Actions du culte et fermeture disponibles dans le menu.
+- Nom du mode actif visible et actualisé au clic ; cycle de quatre modes conservé.
+- Minuteur rétabli après initialisation du lecteur Android natif.
+
+Culte
+- Seuls les thèmes sélectionnés sont affichés ; sélection via Modifier.
+- Boutons Ajouter des chants et Démarrer le culte ; démarrage désactivé si vide.
+- Notes vides repliées ; notes existantes ouvertes.
+- Réinitialisation du minuteur : flèche circulaire.
+
+Tononkira
+- Fermeture dans l’en-tête.
+- Deux onglets : recherche et lien/paroles.
+- Boutons Rechercher et Prévisualiser explicites.
+- Formulaire compact, sélection multiple conservée et action d’import collante.
+- Nouveaux libellés français, malgaches et anglais.
+
+Contrôles
+- JavaScript syntaxiquement valide.
+- 20 assertions de logique/DOM réussies dans Happy DOM avec stockage, réseau et plugin natif simulés.
+- Cycle des modes, menu, notes, thèmes, onglets, sélection multiple et prévisualisation de deux chants vérifiés.
+- Fichiers HTML source, standalone et Android identiques ; JSON analysables.
+- Plugin audio Java conservé identique à la 5.7.12.
+- Archive ZIP vérifiée après création.
+
+Limites
+- Pas de validation visuelle réelle : installation du navigateur de test échouée.
+- Compilation APK bloquée au téléchargement Gradle (réseau inaccessible).
+- Recherche réelle Tononkira, sélecteur Android et fluidité audio non testés sur appareil.
+- Cette version ne prétend pas résoudre ni confirmer la disparition des saccades.
